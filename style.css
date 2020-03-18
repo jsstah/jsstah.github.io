@@ -1,0 +1,93 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+label.checkbox input{
+	display: none;
+}
+label.checkbox > span{
+	display: inline-block;
+	width: 30px;
+	height: 17px;
+	background: blue;
+	border-radius: 8.5px;
+	position: relative;
+	margin: 50px;
+}
+label.checkbox > span > span{
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	background: white;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	border-radius: 50%;
+}
+label.checkbox input:checked + span > span{
+	right: 1px;
+	left: auto;
+}
+
+		/*tabs*/
+div.tabs{
+	width: 300px;
+	border: 1px solid black;
+}
+div.tabs .tab-header{
+	background: #d6d6d6;
+}
+div.tabs .tab-header label{
+	display: inline-block;
+	padding: 5px 15px;
+	border-right: 1px solid #bbbbbb;
+	float: left;
+}
+div.tabs .tab-header label:hover{
+	background: #bbbbbb;
+	cursor: pointer;
+}
+div.tabs .tab-content div{
+	display: none;
+}
+div.tabs input{
+	display: none;
+}
+div.tabs input:checked +div{
+	display: block;
+}
+
+		/*button*/
+button.cool-button{
+	margin: 20px;
+	padding: 0px 40px;
+	font-size: 12px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 7px;
+	background: #565A5D;
+	color: white;
+	position: relative;
+	
+	border: 1px solid rgba(0,0,0,0.5);
+}
+button.cool-button span:first-child{
+	position: absolute;
+	left:2px;
+	top: 0;
+}
+button.cool-button span:last-child{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	display: inline-block;
+	width: 20px;
+	background: rgba(0,0,0,0.4);
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 0 7px 7px 0;
+}
