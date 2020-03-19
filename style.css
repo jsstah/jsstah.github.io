@@ -195,6 +195,7 @@ span{
 	float: right;
 	background: #F4F4F4;
 	border:1px solid #189EFF;
+	position: relative;
 }
 #form-login{
 	float: right;
@@ -303,4 +304,11 @@ p{
 	float: left;
 	height: 17px;
 	line-height: 17px;
+}
+#caption{
+	width: 50%;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	padding-left: 50px;
 }
