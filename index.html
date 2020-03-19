@@ -1,40 +1,94 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Trang index</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<label class="checkbox">
-		<input type="checkbox" name="cb">
-		<span>
-			<span></span>
-		</span>
-	</label>
-
-	<div class="tabs">
-		<div class="tab-header">
-			<label for="tab1">tab1</label>
-			<label for="tab2">tab2</label>
-			<label for="tab3">tab3</label>
-			<div style="clear: both;"></div>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Trang index</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header id="header">
+			<div id="logo">
+				<h3><a href="#">Lập trình cuộc sống</a></h3>
+			</div>
+			<ul id="dropdown-menu">
+				<li><a href="#">Trang chủ</a></li>
+				<li>
+					<a href="#">Khoá học</a>
+					<ul class="sub-menu">
+						<li><a href="#">JavaScript</a></li>
+						<li><a href="#">PHP</a></li>
+						<li><a href="#">HTML/CSS</a></li>
+						<li><a href="#">Bootstrap</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Bài viết hay</a></li>
+				<li><a href="#">Tác giả</a></li>
+				<li><a href="#">Fan page</a></li>
+				<li><a href="#">Youtube</a></li>
+			</ul>
+			<div class="clear"></div>
+		</header>
+		<div id="main">
+			<div id="tiki-menu">
+				<ul>
+					<li><a href="#">Điện thoại - Máy tính bảng</a></li>
+					<li><a href="#">Điện tử - điện lạnh<span>+</span></a>
+						<ul  class="sub-menu">
+							<li><a href="#">Điện thoại - Máy tính bảng</a></li>
+							<li><a href="#">Điện tử - điện lạnh</a></li>
+							<li><a href="#">Phụ kiện - thiết bị số</a></li>
+							<li><a href="#">láp top - thiết bị IT</a></li>
+							<li><a href="#">máy ảnh - quay phim</a></li>
+							<li><a href="#">điện gia dụng</a></li>
+							<li><a href="#">nhà cửa đời sống</a></li>
+							<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Phụ kiện - thiết bị số</a></li>
+					<li><a href="#">láp top - thiết bị IT</a></li>
+					<li><a href="#">máy ảnh - quay phim</a></li>
+					<li><a href="#">điện gia dụng<span>+</span></a>
+						<ul  class="sub-menu">
+							<li><a href="#">Điện thoại - Máy tính bảng</a></li>
+							<li><a href="#">Điện tử - điện lạnh</a></li>
+							<li><a href="#">Phụ kiện - thiết bị số</a></li>
+							<li><a href="#">láp top - thiết bị IT</a></li>
+							<li><a href="#">máy ảnh - quay phim</a></li>
+							<li><a href="#">điện gia dụng</a></li>
+							<li><a href="#">nhà cửa đời sống</a></li>
+							<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
+						</ul>
+					</li>
+					<li><a href="#">nhà cửa đời sống</a></li>
+					<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
+				</ul>
+			</div>
+			<div id="login">
+				<div id="form-login">
+					<img src="img/codersX.png" alt="">
+					<p>Đăng nhập</p>
+					<form action="post">
+						<div class="divInput">
+							<label >EMAIL</label>
+							<input type="text" name="email">
+						</div>
+						<div class="divInput">
+							<label >PASSWORD</label>
+							<input type="password" name="pass">
+						</div>
+						<button style="submit">Đăng nhập</button>
+						<a href="#">Quên mật khẩu?</a>
+					</form>
+					<button type="button">Log in with Facebook</button>
+					<button id="gg" type="button">Log in with Google</button>
+					<div id="register"><a href="#">Đăng ký&nbsp;</a>nếu chưa có tài khoản</div>
+				</div>
+				
+				<div class="clear">
+				</div>
+			</div>
+			<div class="clear"></div>
 		</div>
-		<div class="tab-content">
-			<input id="tab1" type="radio" name="tab-select" checked="checked"></input>
-			<div >Noi dung tab1</div>
-			<input id="tab2" type="radio" name="tab-select"></input>
-			<div >Noi dung tab2</div>
-			<input id="tab3" type="radio" name="tab-select"></input>
-			<div >Noi dung tab3</div>
-		</div>
-	</div>
-
-	<button class="cool-button">
-		<span>Sign out</span>
-		<span></span>
-	</button>
-
-</body>
-</html>
+	</body>
+	</html>
