@@ -28,7 +28,9 @@ span{
 	margin: 25px auto 0px auto;
 	background: rgba(255,255,255,0.9);
 	border-radius: 8px 0 0 0px;
-	display: block;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 #header{
 	background: rgba(0, 0, 0, 0.8);
@@ -99,7 +101,7 @@ span{
 	border-radius: 8px 0 0 8px;
 	box-shadow: inset -35px 0px 16px -41px rgba(0,0,0,0.45);
 	display:inline-block;
-	float: left;
+	/*float: left;*/
 }
 #tiki-menu > ul > li{
 	position: relative;
@@ -243,6 +245,7 @@ p{
 }
 #form-login> form > button:hover{
 	background: #66a7e0;
+	cursor: pointer;
 }
 #form-login a:hover{
 	color: #66a7e0;
@@ -280,9 +283,11 @@ p{
 }
 #form-login > button:hover{
 	background: #223e79;
+	cursor: pointer;
 }
 #form-login #gg:hover{
 	background: #bb4334;
+	cursor: pointer;
 }
 #form-login > button::after{
 	content: "";
@@ -311,4 +316,226 @@ p{
 	position: absolute;
 	bottom: 0;
 	padding-left: 50px;
+}
+/*--------------end login codersx---------*/
+#tabs{
+	width: calc(100% - 270px);
+	padding: 15px;
+}
+#tabs input{
+	display: none; 
+}
+#tabs label{
+	display: inline-block;
+	padding: 7px 13px 7px;
+	text-transform: capitalize;
+}
+#tabs label:hover{
+	cursor: pointer;
+}
+#tabs section{
+	display: none;
+	border-top: 1px solid #ddd; 
+}
+#tabs > input:checked + label {
+	color: #3b5998;
+	border-bottom: 3px solid #3b5998;
+	font-weight: bold;
+	font-size: 18px;
+}
+#tabs #tab1:checked ~ #tab1-content,#tabs #tab2:checked ~ #tab2-content,#tabs #tab3:checked ~ #tab3-content{
+	display: block;
+}
+#tabs .content{
+	border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+#laban{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+#laban li{
+	width: 24.5%;
+	display: inline-block;
+	padding: 12px 0;
+	background-image: url(img/ic_cate_small.png);
+	background-repeat: no-repeat;
+
+}
+#laban li:nth-child(1){
+	background-position: 0 0px;
+}
+#laban li:nth-child(2){
+	background-position: 0 -2223px;
+}
+#laban li:nth-child(3){
+	background-position: 0 -2051px;
+}
+#laban li:nth-child(4){
+	background-position: 0 -1240px;
+}
+#laban li:nth-child(5){
+	background-position: 0 -1137px;
+}
+#laban li:nth-child(6){
+	background-position: 0 -2303px;
+}
+#laban li:nth-child(7){
+	background-position: 0 -2960px
+}
+#laban li:nth-child(8){
+	background-position: 0 -2343px;
+}
+#laban li:nth-child(9){
+	background-position: 0 -2380px;
+}
+#laban li:nth-child(10){
+	background-position: 0 -258px;
+}
+#laban li:nth-child(11){
+	background-position: 0 -2135px;
+}
+#laban li:nth-child(12){
+	background-position: 0 -2883px;
+}
+#laban li:nth-child(13){
+	background-position: 0 -775px;
+}
+#laban li:nth-child(14){
+	background-position: 0 -2802px;
+}
+#laban li:nth-child(15){
+	background-position: 0 -154px;
+}
+#laban li:nth-child(16){
+	background-position: 0 -100px;
+}
+#laban li:nth-child(17){
+	background-position: 0 -775px;
+}
+#laban li:nth-child(18){
+	background-position: 0 -2960px
+}
+#laban li:nth-child(19){
+	background-position: 0 -775px;
+}
+#laban > ul > li > a{
+	padding: 7px;
+	color: black;
+	font-size: 12px;
+	padding-left: 27px;
+	line-height: 20px;
+}
+#laban > ul > li > a:hover{
+	color: #00ACC1;
+	text-shadow: 0 0 0.9px #00ACC1, 0 0 0.9px #00ACC1;
+}
+#laban-header{
+	width: 100%;
+	border-bottom:1px solid #00ACC1;
+}
+#laban-header span{
+	float: left;
+	background: #00ACC1;
+	color: white;
+	font-size: 14px;
+	padding: 7px 10px;
+}
+#tabs #tab2-content{
+	padding: 20px;
+}
+#tabs #tab2-content > label
+{
+	width: 60px;
+	height: 30px;
+	border-radius: 50px;
+	background: #e3342f;
+	position: relative;
+}
+#tabs #tab2-content span{
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #fff;
+}
+#tabs #tab2-content > input:checked ~ label{
+	background: #38c172;
+}
+#tabs #tab2-content > input:checked ~ label >span{
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	left: 34px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #fff;
+}
+#tabs button{
+	color: white;
+	padding: 10px 40px 10px 20px;
+	background: #3395ED;
+	border:1px solid #3395ED;
+	border-radius: 10px;
+	position: relative;
+	outline: none;
+}
+#tabs #tab2-content >button::after{
+	content:">";
+	width: 29px;
+	height: 29px;
+	right: 3px;
+	top: 3px;
+	border-radius: 50%; 
+	background: #2a7ac1;
+	position: absolute;
+	line-height: 29px;
+	font-weight: bold;
+	font-size: 16px;
+}
+#tabs #tab2-content >button:hover{
+	background: #dd4b39;
+	border:1px solid #dd4b39;
+	cursor: pointer;
+}
+#tabs #tab2-content >button:hover::after{
+	color: black;
+	background: #ddd;
+}
+#tab3-content{
+	padding: 30px;
+}
+#tooltip{
+padding: 10px;
+  border-radius: 4px;
+  background: #f75440;
+  width: 200px;
+  position: absolute;
+  color: #fff;
+  top: 130%;
+  right: -100px;
+  display: none;
+}
+#tooltip:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 15%;
+  top: -25%;
+  border-bottom: 12px solid #f75440;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+#tab3-content > button:hover{
+	background: #dd4b39;
+	border:1px solid #dd4b39;
+	cursor: pointer;
+}
+#tab3-content > button:hover #tooltip{
+	display: block;
 }
