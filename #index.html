@@ -1,0 +1,144 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Trang index</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<header id="header">
+			<div id="logo">
+				<h3><a href="#">Lập trình cuộc sống</a></h3>
+			</div>
+			<ul id="dropdown-menu">
+				<li><a href="#">Trang chủ</a></li>
+				<li>
+					<a href="#">Khoá học</a>
+					<ul class="sub-menu">
+						<li><a href="#">JavaScript</a></li>
+						<li><a href="#">PHP</a></li>
+						<li><a href="#">HTML/CSS</a></li>
+						<li><a href="#">Bootstrap</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Bài viết hay</a></li>
+				<li><a href="#">Tác giả</a></li>
+				<li><a href="#">Fan page</a></li>
+				<li><a href="#">Youtube</a></li>
+			</ul>
+			<div class="clear"></div>
+		</header>
+		<div id="main">
+			<div id="tiki-menu">
+				<ul>
+					<li><a href="#">Điện thoại - Máy tính bảng</a></li>
+					<li><a href="#">Điện tử - điện lạnh<span>+</span></a>
+						<ul  class="sub-menu">
+							<li><a href="#">Điện thoại - Máy tính bảng</a></li>
+							<li><a href="#">Điện tử - điện lạnh</a></li>
+							<li><a href="#">Phụ kiện - thiết bị số</a></li>
+							<li><a href="#">láp top - thiết bị IT</a></li>
+							<li><a href="#">máy ảnh - quay phim</a></li>
+							<li><a href="#">điện gia dụng</a></li>
+							<li><a href="#">nhà cửa đời sống</a></li>
+							<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Phụ kiện - thiết bị số</a></li>
+					<li><a href="#">láp top - thiết bị IT</a></li>
+					<li><a href="#">máy ảnh - quay phim</a></li>
+					<li><a href="#">điện gia dụng<span>+</span></a>
+						<ul  class="sub-menu">
+							<li><a href="#">Điện thoại - Máy tính bảng</a></li>
+							<li><a href="#">Điện tử - điện lạnh</a></li>
+							<li><a href="#">Phụ kiện - thiết bị số</a></li>
+							<li><a href="#">láp top - thiết bị IT</a></li>
+							<li><a href="#">máy ảnh - quay phim</a></li>
+							<li><a href="#">điện gia dụng</a></li>
+							<li><a href="#">nhà cửa đời sống</a></li>
+							<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
+						</ul>
+					</li>
+					<li><a href="#">nhà cửa đời sống</a></li>
+					<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
+				</ul>
+			</div>
+			<div id="tabs">
+				<input type="radio" name="sub-tab" id="tab1" checked="checked">
+				<label for="tab1">Laban</label>
+				<input type="radio" name="sub-tab" id="tab2">
+				<label for="tab2">Switch&Button</label>
+				<input type="radio" name="sub-tab" id="tab3" >
+				<label for="tab3">Tooltip</label>
+				<section id="tab1-content" >
+					<div id="laban">
+						<div id="laban-header">
+							<span>Tiện ích tra cứu</span>
+						</div>
+						<ul>
+							<li><a href="#">Từ điển trực tuyến</a></li>
+							<li><a href="#">Kết quả sổ xố</a></li>
+							<li><a href="#">Kết quả bóng đá</a></li>
+							<li><a href="#">Thông tin bóng đá</a></li>
+							<li><a href="#">Thông tin thời tiết</a></li>
+							<li><a href="#">Xem lịch âm</a></li>
+							<li><a href="#">Lịch phim chiếu rạp</a></li>
+							<li><a href="#">Lịch truyền hình</a></li>
+							<li><a href="#">Giá vàng</a></li>
+							<li><a href="#">Tỷ giá</a></li>
+							<li><a href="#">Lãi suất ngân hàng</a></li>
+							<li><a href="#">Chứng khoán trực tuyến</a></li>
+							<li><a href="#">Google</a></li>
+							<li><a href="#">Điểm đặt máy ATM</a></li>
+							<li><a href="#">Việc làm</a></li>
+							<li><a href="#">Tìm việc làm</a></li>
+							<li><a href="#">Chia sẻ file tài liệu</a></li>
+							<li><a href="#">Tìm đường đi</a></li>
+							<li><a href="#">Tra cứu</a></li>
+						</ul>
+					</div>
+				</section>
+				<section id="tab2-content">
+				<input type="checkbox" id="switch">
+					<label for="switch">
+						<span></span>
+					</label>
+					<button>Hover me</button>
+				</section>
+				<section id="tab3-content">
+					<button>Hover me<p id="tooltip">Học thì dốt cứ đòi lên lớp!!!</p></button>
+					
+				</section>
+			</div>
+			<div id="login">
+				<div id="caption">
+					<h2>Stay hungry, stay foolish.</h2>
+					<p><b>Steve Jobs</b> - Apple's CEO</p>
+				</div>
+				<div id="form-login">
+					<img src="img/codersX.png" alt="">
+					<p>Đăng nhập</p>
+					<form action="post">
+						<div class="divInput">
+							<label >EMAIL</label>
+							<input type="text" name="email">
+						</div>
+						<div class="divInput">
+							<label >PASSWORD</label>
+							<input type="password" name="pass">
+						</div>
+						<button style="submit">Đăng nhập</button>
+						<a href="#">Quên mật khẩu?</a>
+					</form>
+					<button type="button">Log in with Facebook</button>
+					<button id="gg" type="button">Log in with Google</button>
+					<div id="register"><a href="#">Đăng ký&nbsp;</a>nếu chưa có tài khoản</div>
+				</div>
+				
+				<div class="clear">
+				</div>
+			</div>
+		</div>
+	</body>
+	</html>

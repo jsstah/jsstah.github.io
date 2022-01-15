@@ -1,144 +1,220 @@
-	<!DOCTYPE html>
-	<html>
-	<head>
-		<title>Trang index</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-	<body>
-		<header id="header">
-			<div id="logo">
-				<h3><a href="#">Lập trình cuộc sống</a></h3>
-			</div>
-			<ul id="dropdown-menu">
-				<li><a href="#">Trang chủ</a></li>
-				<li>
-					<a href="#">Khoá học</a>
-					<ul class="sub-menu">
-						<li><a href="#">JavaScript</a></li>
-						<li><a href="#">PHP</a></li>
-						<li><a href="#">HTML/CSS</a></li>
-						<li><a href="#">Bootstrap</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Bài viết hay</a></li>
-				<li><a href="#">Tác giả</a></li>
-				<li><a href="#">Fan page</a></li>
-				<li><a href="#">Youtube</a></li>
-			</ul>
-			<div class="clear"></div>
-		</header>
-		<div id="main">
-			<div id="tiki-menu">
-				<ul>
-					<li><a href="#">Điện thoại - Máy tính bảng</a></li>
-					<li><a href="#">Điện tử - điện lạnh<span>+</span></a>
-						<ul  class="sub-menu">
-							<li><a href="#">Điện thoại - Máy tính bảng</a></li>
-							<li><a href="#">Điện tử - điện lạnh</a></li>
-							<li><a href="#">Phụ kiện - thiết bị số</a></li>
-							<li><a href="#">láp top - thiết bị IT</a></li>
-							<li><a href="#">máy ảnh - quay phim</a></li>
-							<li><a href="#">điện gia dụng</a></li>
-							<li><a href="#">nhà cửa đời sống</a></li>
-							<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
-						</ul>
-					</li>
-					<li><a href="#">Phụ kiện - thiết bị số</a></li>
-					<li><a href="#">láp top - thiết bị IT</a></li>
-					<li><a href="#">máy ảnh - quay phim</a></li>
-					<li><a href="#">điện gia dụng<span>+</span></a>
-						<ul  class="sub-menu">
-							<li><a href="#">Điện thoại - Máy tính bảng</a></li>
-							<li><a href="#">Điện tử - điện lạnh</a></li>
-							<li><a href="#">Phụ kiện - thiết bị số</a></li>
-							<li><a href="#">láp top - thiết bị IT</a></li>
-							<li><a href="#">máy ảnh - quay phim</a></li>
-							<li><a href="#">điện gia dụng</a></li>
-							<li><a href="#">nhà cửa đời sống</a></li>
-							<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
-						</ul>
-					</li>
-					<li><a href="#">nhà cửa đời sống</a></li>
-					<li><a href="#">hàng tiêu dùng thực phẩm</a></li>
-				</ul>
-			</div>
-			<div id="tabs">
-				<input type="radio" name="sub-tab" id="tab1" checked="checked">
-				<label for="tab1">Laban</label>
-				<input type="radio" name="sub-tab" id="tab2">
-				<label for="tab2">Switch&Button</label>
-				<input type="radio" name="sub-tab" id="tab3" >
-				<label for="tab3">Tooltip</label>
-				<section id="tab1-content" >
-					<div id="laban">
-						<div id="laban-header">
-							<span>Tiện ích tra cứu</span>
-						</div>
-						<ul>
-							<li><a href="#">Từ điển trực tuyến</a></li>
-							<li><a href="#">Kết quả sổ xố</a></li>
-							<li><a href="#">Kết quả bóng đá</a></li>
-							<li><a href="#">Thông tin bóng đá</a></li>
-							<li><a href="#">Thông tin thời tiết</a></li>
-							<li><a href="#">Xem lịch âm</a></li>
-							<li><a href="#">Lịch phim chiếu rạp</a></li>
-							<li><a href="#">Lịch truyền hình</a></li>
-							<li><a href="#">Giá vàng</a></li>
-							<li><a href="#">Tỷ giá</a></li>
-							<li><a href="#">Lãi suất ngân hàng</a></li>
-							<li><a href="#">Chứng khoán trực tuyến</a></li>
-							<li><a href="#">Google</a></li>
-							<li><a href="#">Điểm đặt máy ATM</a></li>
-							<li><a href="#">Việc làm</a></li>
-							<li><a href="#">Tìm việc làm</a></li>
-							<li><a href="#">Chia sẻ file tài liệu</a></li>
-							<li><a href="#">Tìm đường đi</a></li>
-							<li><a href="#">Tra cứu</a></li>
-						</ul>
-					</div>
-				</section>
-				<section id="tab2-content">
-				<input type="checkbox" id="switch">
-					<label for="switch">
-						<span></span>
-					</label>
-					<button>Hover me</button>
-				</section>
-				<section id="tab3-content">
-					<button>Hover me<p id="tooltip">Học thì dốt cứ đòi lên lớp!!!</p></button>
-					
-				</section>
-			</div>
-			<div id="login">
-				<div id="caption">
-					<h2>Stay hungry, stay foolish.</h2>
-					<p><b>Steve Jobs</b> - Apple's CEO</p>
-				</div>
-				<div id="form-login">
-					<img src="img/codersX.png" alt="">
-					<p>Đăng nhập</p>
-					<form action="post">
-						<div class="divInput">
-							<label >EMAIL</label>
-							<input type="text" name="email">
-						</div>
-						<div class="divInput">
-							<label >PASSWORD</label>
-							<input type="password" name="pass">
-						</div>
-						<button style="submit">Đăng nhập</button>
-						<a href="#">Quên mật khẩu?</a>
-					</form>
-					<button type="button">Log in with Facebook</button>
-					<button id="gg" type="button">Log in with Google</button>
-					<div id="register"><a href="#">Đăng ký&nbsp;</a>nếu chưa có tài khoản</div>
-				</div>
-				
-				<div class="clear">
-				</div>
-			</div>
-		</div>
-	</body>
-	</html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: url(img/preview.jpg) 0 0 no-repeat; background-size: 100%;
+            -webkit-perspective: 800;
+        }
+        li{
+            list-style: none;
+        }
+        .box{
+            width:200px;
+            height:200px;
+            position: relative;
+            margin:275px auto;
+            -webkit-transform-style:preserve-3d;
+            -webkit-transform:rotateX(20deg) ;
+            -webkit-animation:move 5s linear infinite;
+        }
+        .minbox{
+            width:100px;
+            height:100px;
+            position: absolute;
+            left:50px;
+            top:50px;
+            -webkit-transform-style:preserve-3d;
+        }
+        .minbox li{
+            width:100px;
+            height:100px;
+            position: absolute;
+            left:0;
+            top:0;
+        }
+        .minbox li:nth-child(1){
+            background: url(images/7.jpg) no-repeat 0 0;
+            -webkit-transform:translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .minbox li:nth-child(2){
+            background: url(images/9.jpg) no-repeat 0 0;
+            -webkit-transform:rotateX(180deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .minbox li:nth-child(3){
+            background: url(images/8.jpg) no-repeat 0 0;
+            -webkit-transform:rotateX(-90deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .minbox li:nth-child(4){
+            background: url(images/10.png) no-repeat 0 0;
+            -webkit-transform:rotateX(90deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .minbox li:nth-child(5){
+            background: url(images/11.jpg) no-repeat 0 0;
+            -webkit-transform:rotateY(-90deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .minbox li:nth-child(6){
+            background: url(images/12.jpeg) no-repeat 0 0;
+            -webkit-transform:rotateY(90deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .maxbox li:nth-child(1){
+            background: url(images/7.jpg) no-repeat 0 0;
+            -webkit-transform:translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .maxbox li:nth-child(2){
+            background: url(images/9.jpg) no-repeat 0 0;
+            -webkit-transform:rotateX(180deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .maxbox li:nth-child(3){
+            background: url(images/8.jpg) no-repeat 0 0;
+            background-size: 100% 100%;
+            -webkit-transform:rotateX(-90deg) translateZ(50px);
+        }
+        .maxbox li:nth-child(4){
+            background: url(images/10.png) no-repeat 0 0;
+            -webkit-transform:rotateX(90deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .maxbox li:nth-child(5){
+            background: url(images/11.jpg) no-repeat 0 0;
+            -webkit-transform:rotateY(-90deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .maxbox li:nth-child(6){
+            background: url(images/12.jpeg) no-repeat 0 0;
+            -webkit-transform:rotateY(90deg) translateZ(50px);
+            background-size: 100% 100%;
+        }
+        .maxbox{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            -webkit-transform-style: preserve-3d;
+        }
+        .maxbox li{
+            width: 200px;
+            height: 200px;
+            background: #fff;
+            border:1px solid #ccc;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.2;
+            -webkit-transition:all 1s ease;
+        }
+        .maxbox li:nth-child(1){
+            -webkit-transform:translateZ(100px);
+        }
+        .maxbox li:nth-child(2){
+            -webkit-transform:rotateX(180deg) translateZ(100px);
+        }
+        .maxbox li:nth-child(3){
+            -webkit-transform:rotateX(-90deg) translateZ(100px);
+        }
+        .maxbox li:nth-child(4){
+            -webkit-transform:rotateX(90deg) translateZ(100px);
+        }
+        .maxbox li:nth-child(5){
+            -webkit-transform:rotateY(-90deg) translateZ(100px);
+        }
+        .maxbox li:nth-child(6){
+            -webkit-transform:rotateY(90deg) translateZ(100px);
+        }
+        .box:hover ol li:nth-child(1){
+            -webkit-transform:translateZ(250px);
+            width: 350px;
+            height: 350px;
+            opacity: 0.8;
+            left: -100px;
+            top: -100px;
+        }
+        .box:hover ol li:nth-child(2){
+            -webkit-transform:rotateX(180deg) translateZ(250px);
+            width: 350px;
+            height: 350px;
+            opacity: 0.8;
+            left: -100px;
+            top: -100px;
+        }
+        .box:hover ol li:nth-child(3){
+            -webkit-transform:rotateX(-97deg) translateZ(250px);
+            width: 350px;
+            height: 350px;
+            opacity: 0.8;
+            left: -100px;
+            top: -100px;
+        }
+        .box:hover ol li:nth-child(4){
+            -webkit-transform:rotateX(90deg) translateZ(250px);
+            width: 350px;
+            height: 350px;
+            opacity: 0.8;
+            left: -100px;
+            top: -100px;
+        }
+        .box:hover ol li:nth-child(5){
+            -webkit-transform:rotateY(-90deg) translateZ(250px);
+            width: 350px;
+            height: 350px;
+            opacity: 0.8;
+            left: -100px;
+            top: -100px;
+        }
+        .box:hover ol li:nth-child(6){
+            -webkit-transform:rotateY(90deg) translateZ(250px);
+            width: 350px;
+            height: 350px;
+            opacity: 0.8;
+            left: -100px;
+            top: -100px;
+        }
+        @keyframes move{
+            0%{
+                -webkit-transform: rotateX(13deg) rotateY(0deg);
+            }
+            100%{
+                -webkit-transform:rotateX(13deg) rotateY(360deg);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <ul class="minbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ol class="maxbox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+</body>
+</html>
