@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
 	<title></title>
+	<script src='https://cdn.jsdelivr.net/npm/fireworks-js@latest/dist/fireworks.js'></script>
 </head>
 <body>
 	<nav>
 
 		<div class="stars"></div>
+		<div class="fireworks-container"></div>
+		<div class="fireworks-container"></div>
 		<div id="perspective" ondragstart="return false;">
 			<div id="wrap" >
 				<img src="images/img11.jpg" alt="" width="133" height="200">
@@ -24,6 +27,7 @@
 <!--				<img src="images/11.jpg" alt="" width="133" height="200">-->
 			</div>
 		</div>
+	</nav>
 	</body>
 
 	</html>
@@ -47,6 +51,14 @@
 			-khtml-user-select: none;
 			user-select: none;
 
+		}
+		.fireworks-container {
+			position: fixed;
+			width: 100%;
+			height: 100%;
+		}
+		.fireworks-container:nth-of-type(2){
+			z-index: 9;
 		}
 		ul{
 			list-style: none;
@@ -158,7 +170,8 @@ for (var i = 0; i < n; i++) {
 	str += numX +'px'+' ' + numY+'px'+' '+ color+',';
 }
 str = str.slice(0,-1);
-star.style.boxShadow = str;var oImg = document.getElementsByTagName("img");
+star.style.boxShadow = str;
+var oImg = document.getElementsByTagName("img");
 var oWrap = document.getElementById("wrap");
 var nowX, nowY, lastX, lastY, minusX, minusY, roX = -10, roY = 0;
 (function(i){
@@ -243,4 +256,28 @@ function touchEnd(e){
 document.addEventListener('touchstart', touchStart, false);
 document.addEventListener('touchmove', touchMove, false);
 document.addEventListener('touchend', touchEnd, false);
+
+		initFireWorks()
+
+		function initFireWorks(){
+			const containers = document.querySelectorAll('.fireworks-container')
+			containers.forEach((container,index) => {
+				index+=1;
+				const fireworks = new Fireworks(container, {
+					hue: { min: 0, max: 360 },
+					delay: { min: 50/index, max: 100/index },
+					brightness: {min: 80, max: 100},
+					rocketsPoint: 50,
+					opacity: 1,
+					speed: 1/index,
+					acceleration: 1.05,
+					friction: 0.97,
+					gravity: 2,
+					particles: 200/index,
+					trace: 4/index,
+					explosion: 40/index,
+				})
+				fireworks.start()
+			})
+		}
 </script>
