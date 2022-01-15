@@ -4,14 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1 user-scalable=0"/>
 	<title></title>
-	<script src='FireWorks.js'></script>
 </head>
 <body>
 	<nav>
-
 		<div class="stars"></div>
-		<div class="fireworks-container"></div>
-		<div class="fireworks-container"></div>
+		<canvas id="canvas"></canvas>
 		<div id="perspective" ondragstart="return false;">
 			<div id="wrap" >
 				<img src="images/img11.jpg" alt="" width="133" height="200">
@@ -98,7 +95,7 @@
 			/*animation: fly 3s linear infinite;*/
 			transform-style: preserve-3d;
 
-			
+
 
 		}
 		.stars:before, .stars:after {
@@ -256,28 +253,29 @@ function touchEnd(e){
 document.addEventListener('touchstart', touchStart, false);
 document.addEventListener('touchmove', touchMove, false);
 document.addEventListener('touchend', touchEnd, false);
-
-		initFireWorks()
-
-		function initFireWorks(){
-			const containers = document.querySelectorAll('.fireworks-container')
-			containers.forEach((container,index) => {
-				index+=1;
-				const fireworks = new Fireworks(container, {
-					hue: { min: 0, max: 360 },
-					delay: { min: 50/index, max: 100/index },
-					brightness: {min: 80, max: 100},
-					rocketsPoint: 50,
-					opacity: 1,
-					speed: 1/index,
-					acceleration: 1.05,
-					friction: 0.97,
-					gravity: 2,
-					particles: 200/index,
-					trace: 4/index,
-					explosion: 40/index,
-				})
-				fireworks.start()
-			})
-		}
+		//
+		// initFireWorks()
+		//
+		// function initFireWorks(){
+		// 	const containers = document.querySelectorAll('.fireworks-container')
+		// 	containers.forEach((container,index) => {
+		// 		index+=1;
+		// 		const fireworks = new Fireworks(container, {
+		// 			hue: { min: 0, max: 360 },
+		// 			delay: { min: 50/index, max: 100/index },
+		// 			brightness: {min: 80, max: 100},
+		// 			rocketsPoint: 50,
+		// 			opacity: 1,
+		// 			speed: 1/index,
+		// 			acceleration: 1.05,
+		// 			friction: 0.97,
+		// 			gravity: 2,
+		// 			particles: 200/index,
+		// 			trace: 4/index,
+		// 			explosion: 40/index,
+		// 		})
+		// 		fireworks.start()
+		// 	})
+		// }
 </script>
+<script src='FireWorks.js'></script>
